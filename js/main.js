@@ -32,7 +32,7 @@
         var message = [
           "Starts in",
           days, pluralize("day", "days", days),
-          hours, pluralize("hour", "hours", days),
+          hours, pluralize("hour", "hours", hours),
           minutes, pluralize("minute", "minutes", minutes),
           "and",
           seconds, pluralize("second", "seconds", seconds)
