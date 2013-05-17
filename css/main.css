@@ -98,29 +98,23 @@ html, body {
 }
 
 body {
-  /* mozilla rainbow gradient */  
-  background-image: -moz-linear-gradient(
-    left top, right bottom,
-    from(red),
-    color-stop(16%, orange),
-    color-stop(32%, yellow),
-    color-stop(48%, green),
-    color-stop(60%, blue),
-    color-stop(76%, indigo),
-    to(violet)
-  );
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
 
-  /* webkit rainbow gradient */
-  background-image: -webkit-gradient(
-    linear, left top, left bottom, 
-    color-stop(0.00, red), 
-    color-stop(16%, orange),
-    color-stop(32%, yellow),
-    color-stop(48%, green),
-    color-stop(60%, blue),
-    color-stop(76%, indigo),
-    color-stop(1.00, violet)
-  );
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(top, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, red), color-stop(0.16, orange), color-stop(0.32, yellow), color-stop(0.48, green), color-stop(0.60, blue), color-stop(0.76, indigo), color-stop(1, violet));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
 }
 
 div.spacer {
