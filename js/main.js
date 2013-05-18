@@ -15,7 +15,7 @@
 
     var it_is_friday = weekday == 5;
 
-    if (it_is_friday || true) {
+    if (it_is_friday) {
       location.hash = "#¸¸♬·¯·♩¸¸♪·¯·♫¸¸  90sFriday  ¸¸♬·¯·♩¸¸♪·¯·♫¸¸";
 
       $(".spacer").hide();
@@ -25,7 +25,7 @@
       $("#soundrop").attr(
         "src", "http://play.soundrop.fm/s/WNCP6erFQMFSEImS#"
       ).css("display", "block");
-      $("#dance").css("display", "block");
+      $("#dance").css("display", "inline-block");
     } else {
       var next_friday = here_and_now.add('days', days_until_friday).hour(0).minute(0).second(0);
 
@@ -73,6 +73,7 @@
     }
 
     $("#dance").on("click", function() {
+      $(this).toggleClass("active");
       dance();
     });
   });
