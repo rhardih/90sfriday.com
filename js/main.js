@@ -15,7 +15,7 @@
 
     var it_is_friday = weekday == 5;
 
-    if (it_is_friday) {
+    if (it_is_friday || true) {
       location.hash = "#¸¸♬·¯·♩¸¸♪·¯·♫¸¸  90sFriday  ¸¸♬·¯·♩¸¸♪·¯·♫¸¸";
 
       $(".spacer").hide();
