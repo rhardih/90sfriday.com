@@ -93,7 +93,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body {
+.fullheight {
   height: 100%;
 }
 
@@ -115,6 +115,8 @@ body {
 
   /* W3C Markup, IE10 Release Preview */
   background-image: linear-gradient(to bottom, red 0%, orange 16%, yellow 32%, green 48%, blue 60%, indigo 76%, violet 100%);
+
+  box-sizing: border-box;
 }
 
 div.spacer {
@@ -151,6 +153,19 @@ h1#banner {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
   font-variant: small-caps;
+}
+
+#dance {
+  padding: 10px 40px;
+  margin: 20px auto;
+  display: none;
+}
+
+#soundrop {
+  width: 900px;
+  height: 1200px;
+  display: none;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
