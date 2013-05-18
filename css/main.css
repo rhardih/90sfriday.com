@@ -62,7 +62,7 @@ h1#banner {
 }
 
 #dance {
-  margin-bottom: 40px;
+  margin: 0px 100px 40px 100px;
   display: none;
 }
 
@@ -127,6 +127,12 @@ h1#banner {
   -moz-transform: translate(0, 4px);
   -o-transform: translate(0, 4px);
   transform: translate(0, 4px);
+}
+
+img.butabi {
+  height: 130px;
+  vertical-align: middle;
+  display: none;
 }
 
 #soundrop {

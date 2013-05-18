@@ -74,6 +74,7 @@
 
     $("#dance").on("click", function() {
       $(this).toggleClass("active");
+      $(".butabi").toggle();
       dance();
     });
   });
