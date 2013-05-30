@@ -7,6 +7,10 @@
     }
   }
 
+  $(function() {
+    $('#tweetbox').twitterSlider();
+  });
+
   $(function () {
     var $message = $("#message");
     var here_and_now = moment();
@@ -26,6 +30,7 @@
         "src", "http://play.soundrop.fm/s/WNCP6erFQMFSEImS#"
       ).css("display", "block");
       $("#dance").css("display", "inline-block");
+      $("#tweetbox").css("display", "block");
     } else {
       var next_friday = here_and_now.add('days', days_until_friday).hour(0).minute(0).second(0);
 
