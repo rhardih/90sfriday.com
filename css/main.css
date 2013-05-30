@@ -142,3 +142,48 @@ img.butabi {
   display: none;
   margin: 0 auto;
 }
+
+#tweetbox {
+  display: none;
+  font-family: arial;
+  width: 700px;
+  margin: 20px auto;
+  height: 50px;
+  position: relative;
+}
+
+#tweetbox ul,
+#tweetbox li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tweetbox img {
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  margin-right: 20px;
+}
+
+#tweetbox li {
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+  position: absolute;
+  line-height: 25px;
+  padding-left: 75px;
+  text-align: left;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease; /* Firefox */
+  -moz-transition: opacity 1s ease; /* WebKit */
+  -o-transition: opacity 1s ease; /* Opera */
+  transition: opacity 1s ease; /* Standard */
+}
+
+#tweetbox li.active {
+  opacity: 1;
+}
