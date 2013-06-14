@@ -7,10 +7,6 @@
     }
   }
 
-  $(function() {
-    $('#tweetbox').twitterSlider();
-  });
-
   $(function () {
     var $message = $("#message");
     var here_and_now = moment();

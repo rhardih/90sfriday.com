@@ -187,3 +187,9 @@ img.butabi {
 #tweetbox li.active {
   opacity: 1;
 }
+
+#twitter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
